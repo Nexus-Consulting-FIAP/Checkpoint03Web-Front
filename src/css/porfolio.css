@@ -1,17 +1,63 @@
 main {
+    color: var(--white);
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        radial-gradient(rgba(255, 255, 255, 0.4) .06rem, transparent 1px), 
-        url(/src/assets/foto_camera_fundoportfolio.jpg);
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    radial-gradient(rgba(255, 255, 255, 0.4) .06rem, transparent 1px), 
+    url(/src/assets/foto_camera_fundoportfolio.jpg);
     background-size: 
-        cover,
-        1rem 1rem, 
-        cover;
+    cover,
+    1rem 1rem, 
+    cover;
     background-repeat: 
-        no-repeat,
-        repeat, 
-        no-repeat;
+    no-repeat,
+    repeat, 
+    no-repeat;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main h2, h3 {
+    border-bottom: solid .15rem var(--blue);
+}
+main h3:hover{
+    padding-inline: 2rem;
+}
+main h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 4rem;
+}
+.portfolio-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.portfolio-section h3 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding-inline: 1rem;
+    margin-bottom: 1rem;
+}
+.portfolio-section h3:hover {
+    padding-inline: 2rem;
+}
+.portfolio-gallery {
+    display: flex;
+    gap: 5rem;
+}
+.portfolio-gallery img{
+    object-fit: cover;
+    object-position: center;
+    width: 16rem;
+    height: 10rem;
+    border-radius: 3rem;
+}
+.portfolio-gallery img:hover {
+    transform: scale(110%);
+    box-shadow: 0 0 1rem var(--gray);
 }
 
 .fs-div {
