@@ -1,0 +1,15 @@
+main {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        radial-gradient(rgba(255, 255, 255, 0.4) .06rem, transparent 1px), 
+        url(/src/assets/foto_camera_contato.jpg);
+    background-size: 
+        cover,
+        1rem 1rem, 
+        cover;
+    background-repeat: 
+        no-repeat,
+        repeat, 
+        no-repeat;
+    background-position: center;
+}
