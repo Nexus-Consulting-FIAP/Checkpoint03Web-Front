@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,19 @@
     <link rel="stylesheet" href="/src/css/main.css">
     <title>Portfólio</title>
 </head>
+
 <body>
+    
+    <!--Fullscreen-->
+    <div id="fs" class="fs-div hidden">
+        <div></div>
+        <svg id = "btn-exit" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512">
+            <path fill="#3a86ff"
+                d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z" />
+        </svg>
+        <img id="imgfs" src="">
+    </div>
     <header>
         <nav>
             <h1>GALERIA NEXUS</h1>
@@ -24,17 +37,17 @@
         <div>
             <h3>NATUREZA</h3>
             <div>
-                <img src="/src/assets/foto_caverna_portfolio.jpg" alt="">
-                <img src="/src/assets/foto_oceano_portfolio.jpg" alt="">
-                <img src="/src/assets/foto_pordosol_portfolio.jpg" alt="">
+                <img id="img1" src="/src/assets/foto_caverna_portfolio.jpg" alt="">
+                <img id="img2" src="/src/assets/foto_oceano_portfolio.jpg" alt="">
+                <img id="img3" src="/src/assets/foto_pordosol_portfolio.jpg" alt="">
             </div>
         </div>
         <div>
             <h3>PONTOS TURISTICOS</h3>
             <div>
-                <img src="/src/assets/foto_goldenbridge_portfolio.jpg" alt="">
-                <img src="/src/assets/foto_tajmahal_portfolio.jpg" alt="">
-                <img src="/src/assets/foto_grecia_portfolio.jpg" alt="">
+                <img id="img4" src="/src/assets/foto_goldenbridge_portfolio.jpg" alt="">
+                <img id="img5" src="/src/assets/foto_tajmahal_portfolio.jpg" alt="">
+                <img id="img6" src="/src/assets/foto_grecia_portfolio.jpg" alt="">
             </div>
         </div>
     </main>
@@ -53,5 +66,7 @@
             <p>-2025 Todos os direitos reservados</p>
         </div>
     </footer>
+    <script src="../src/js/portfolio.js"></script>
 </body>
+
 </html>
