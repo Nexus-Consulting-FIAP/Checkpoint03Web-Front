@@ -13,3 +13,7 @@ main {
         no-repeat;
     background-position: center;
 }
+
+.result-text {
+    color: greenyellow;
+}
