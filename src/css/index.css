@@ -48,3 +48,25 @@ main .main-container a:hover {
     cursor: pointer;
     transform: scale(105%);
 }
+
+@media (width <= 68rem) {
+    main .main-container h1{
+        font-size: 7vw;
+    }
+    main .main-container span{
+        font-size: 7vw;
+    }
+    main .main-container a {
+        padding: .1rem 1rem;
+        font-size: 2rem;
+    }
+}
+@media (width <= 31rem) {
+    main .main-container h1{
+        font-size: 2rem;
+    }
+   main .main-container a {
+        font-size: 1rem;
+        text-align: center;
+    } 
+}

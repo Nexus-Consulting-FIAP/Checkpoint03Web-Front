@@ -1,6 +1,6 @@
 main {
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         radial-gradient(rgba(255, 255, 255, 0.4) .06rem, transparent 1px), 
         url(/src/assets/foto_camera_contato.jpg);
     background-size: 
@@ -13,7 +13,92 @@ main {
         no-repeat;
     background-position: center;
 }
+.contact-container{
+    height: 100%;
+    width: 28vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4rem;
+}
+.contact-container h1 {
+    color: var(--blue);
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+}
+.contact-forms {
+    position: relative;
+    background-color: var(--white);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.contact-forms h2 {
+    margin-bottom: 1rem;
+}
+.contact-forms .input-container {
+    background-color: var(--blue);
+    width: 100%;
+    display: flex;
+    padding: .5rem;
+    margin-bottom: 1.3rem;
+    border-radius: .6rem;
+}
+.contact-forms .input-container p{
+    font-weight: 700;
+    margin-right: .5rem;
+}
+.contact-forms .input-container textarea, .contact-forms .input-container input{
+    width: 100%;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.contact-forms button {
+    position: relative;
+    background-color: var(--blue);
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: fit-content;
+    margin: auto;
+    padding: .5rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+}
+.contact-forms button:hover {
+    cursor: pointer;
+    transform: scale(105%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), linear-gradient(var(--blue), var(--blue));
+}
+.contact-forms .result-text {
+    color: var(--blue);
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 1rem;
+}
 
-.result-text {
-    color: greenyellow;
+@media (width <= 68rem) {
+    .contact-container{
+        margin-left: 2rem;
+        width: 50vw;
+    }
+}
+@media (width <= 36rem) {
+    .contact-container{
+        margin-inline: auto;
+        width: 90%;
+    }
+}
+@media (width <= 20rem) {
+    main {
+        display: flex;
+        align-items: center;
+    }
+    .contact-container h1{
+        font-size: 2rem;
+    }
 }
