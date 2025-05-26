@@ -40,14 +40,14 @@ header nav {
 header nav ul li a{
     display: flex;
     justify-content: center;
-    color: rgb(70, 69, 69);
+    color: var(--white);
     text-decoration: none;
     font-size: 1rem;
+    font-weight: 200;
 }
 header nav ul li a:hover{
-    transform: scale(130%);
-    color: rgb(255, 255, 255);
-    font-weight:bold ;
+    transform: scale(120%);
+    font-weight: bold;
 }
 
 main {
