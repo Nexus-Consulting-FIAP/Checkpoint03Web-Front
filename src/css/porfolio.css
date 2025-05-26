@@ -46,6 +46,7 @@ main h2 {
 }
 .portfolio-gallery {
     display: flex;
+    flex-wrap: wrap;
     gap: 5rem;
 }
 .portfolio-gallery img{
@@ -53,6 +54,7 @@ main h2 {
     object-position: center;
     width: 16rem;
     height: 10rem;
+    margin: auto;
     border-radius: 3rem;
 }
 .portfolio-gallery img:hover {
@@ -83,8 +85,9 @@ main h2 {
 .fs-div > svg {
     height: 3rem;
     position: absolute;
-    left: 96%;
-    top: 1%;
+    right: 2rem;
+    top: 1rem;
+    z-index: 5;
 }
 
 .hidden {
